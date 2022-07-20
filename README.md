@@ -51,7 +51,7 @@ Lumac0 is a traditional chess engine without any kind of NN-related code.
 The engine uses the UCI interface.
 It has the following options (excluding almost useless ones):
 
- - Threads: Number of threads used by the engine, minimum (and suggested) value is 2: 1 for the search and 1 for the input cehcking.
+ - Threads: Number of threads used by the engine, minimum (and suggested) value is 2: 1 for the search and 1 for the input checking.
  - Hash: How many Megabytes of RAM the engine is allowed to use for the TT.
  - Ponder: Whether pondering is activated or not. (Pondering = thinking during the opponent's time)
 
