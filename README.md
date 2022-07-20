@@ -56,4 +56,4 @@ It has the following options (excluding almost useless ones):
  - Ponder: Whether pondering is activated or not. (Pondering = thinking during the opponent's time)
 
 ## Credits
-Lumac0 is completely based upon information found on the [Chess Programming Wiki](https://https://www.chessprogramming.org).
+Lumac0 is completely based upon information found on the [Chess Programming Wiki](https://www.chessprogramming.org).
