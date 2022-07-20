@@ -14,6 +14,31 @@ Lumac0 doesn't require any third party library, all you need in order to compile
 Here is the command to compile the engine using g++ once you're in the directory:
 
 ```
-cd 
-g++ -std=c++11 -Ofast -olumac0.exe lumac0.xpp
+g++ -std=c++11 -Ofast -olumac0.exe lumac0.cpp
 ```
+
+## Features
+Lumac0 is a traditional chess engine without any kind of NN-related code.
+
+### Search
+ - Alpha-Beta negamax search
+ - Transposition tables using zobrist hashing
+ - Quiscence search
+ - Iterative deepening
+ - Gradually widening aspiration windows
+
+### Pruning and Reductions/Extensions
+ - Late move reductions
+ - Static null move pruning
+ - Null move pruning
+ - Futility pruning
+ - Razoring
+ - Check extensions
+
+### Move ordering
+ - Q-search only has MVV-LVA
+ - Hash move first
+ - MVV-LVA
+ - Countermove Heuristic
+ - History Heuristic
+ - Killer Moves
