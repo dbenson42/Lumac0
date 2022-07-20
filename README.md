@@ -42,3 +42,18 @@ Lumac0 is a traditional chess engine without any kind of NN-related code.
  - Countermove Heuristic
  - History Heuristic
  - Killer Moves
+
+### Evaluation
+ - Piece-square tables
+ - Passed, doubled, isolated pawns
+
+## How to use
+The engine uses the UCI interface.
+It has the following options (excluding almost useless ones):
+
+ - Threads: Number of threads used by the engine, minimum (and suggested) value is 2: 1 for the search and 1 for the input cehcking.
+ - Hash: How many Megabytes of RAM the engine is allowed to use for the TT.
+ - Ponder: Whether pondering is activated or not. (Pondering = thinking during the opponent's time)
+
+## Credits
+Lumac0 is completely based upon information found on the [Chess Programming Wiki](https://https://www.chessprogramming.org).
