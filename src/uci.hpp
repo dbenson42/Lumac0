@@ -11,7 +11,7 @@ std::string ucistring = "id name Lumac0 "+version+"\nid author Davide Bencini\n\
 						"option name Clear Hash type button\n"
 						"option name UCI_AnalyseMode type check default false\n"
 						"option name UCI_ShowWDL type check default false\n"
-						"option name Log File type string default\n"
+						"option name Log File type string default "+logpath+"\n"
 						"uciok\n";
 
 namespace UCI {
@@ -85,14 +85,14 @@ namespace UCI {
 					UCIparams::Hash = std::stoi(value);
 					TTables::create_tt(UCIparams::Hash);
 				} else if (option == "Threads") {
-					UCIparams::Threads = std::stoi(value)-1;
+					UCIparams::Threads = std::max(1,std::stoi(value)-1);
 				} else if (option == "Clear Hash") {
 					TTables::create_tt(UCIparams::Hash);
 				} else if (option == "UCI_AnalyseMode") {
 					UCIparams::UCI_AnalyseMode = (value=="true"?true:false);
 				} else if (option == "UCI_ShowWDL") {
 					UCIparams::UCI_ShowWDL = (value=="true"?true:false);
-				} else if (option == "Log FIle") {
+				} else if (option == "Log File") {
 					logpath = value;
 				} else {
 					std::cout << "Unknown option: '" << option << "'\n";
