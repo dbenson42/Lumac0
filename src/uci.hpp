@@ -11,6 +11,7 @@ std::string ucistring = "id name Lumac0 "+version+"\nid author Davide Bencini\n\
 						"option name Clear Hash type button\n"
 						"option name UCI_AnalyseMode type check default false\n"
 						"option name UCI_ShowWDL type check default false\n"
+						"option name Log File type string default\n"
 						"uciok\n";
 
 namespace UCI {
@@ -91,6 +92,8 @@ namespace UCI {
 					UCIparams::UCI_AnalyseMode = (value=="true"?true:false);
 				} else if (option == "UCI_ShowWDL") {
 					UCIparams::UCI_ShowWDL = (value=="true"?true:false);
+				} else if (option == "Log FIle") {
+					logpath = value;
 				} else {
 					std::cout << "Unknown option: '" << option << "'\n";
 					logfile.open(logpath, std::ios::app);
