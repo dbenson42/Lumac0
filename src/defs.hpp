@@ -49,7 +49,7 @@ enum TTflag {ALL, CUT, PV};
 typedef std::map<Key, bool> RepetitionTable;
 typedef std::map<Key, Value> PositionMap;
 
-std::string logpath = "";
+std::string logpath = "./log.txt";
 std::ofstream logfile;
 
 //Here we have the parameters for the search.
@@ -104,7 +104,7 @@ namespace UCIparams {
 	bool UCI_AnalyseMode = false;
 	uint8_t Threads = 1;
 	uint16_t MoveOverhead = 10;
-	uint32_t Hash = 512;	
+	uint32_t Hash = 512;
 }
 
 struct Stack {
