@@ -49,7 +49,7 @@ enum TTflag {ALL, CUT, PV};
 typedef std::map<Key, bool> RepetitionTable;
 typedef std::map<Key, Value> PositionMap;
 
-std::string logpath = "c:\\users\\davidecasa\\desktop\\cpp_lumacs\\log.txt";
+std::string logpath = "";
 std::ofstream logfile;
 
 //Here we have the parameters for the search.
