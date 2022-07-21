@@ -11,6 +11,8 @@ The engine is under continous improvement, and still needs a lot of optimization
 ## How to compile
 Lumac0 doesn't require any third party library, all you need in order to compile it is a c++ compiler, preferably g++.
 
+The windows x64 binary is precompiled in the [releases](https://github.com/lumac0/releases).
+
 Here is the command to compile the engine using g++ once you're in the directory:
 
 ```
