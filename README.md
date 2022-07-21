@@ -13,7 +13,7 @@ Lumac0 doesn't require any third party library, all you need in order to compile
 
 The windows x64 binary is precompiled in the [releases](https://github.com/dbenson42/Lumac0/releases).
 
-Here is the command to compile the engine using g++ once you're in the directory:
+Here is the command to compile the engine using g++ once you're in the directory (lumac0/src):
 
 ```
 g++ -std=c++11 -Ofast -olumac0.exe lumac0.cpp
